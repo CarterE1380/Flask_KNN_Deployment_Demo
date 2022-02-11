@@ -1,0 +1,17 @@
+<html>
+    <body>
+
+        <center>
+
+            <h1>Flask Deployment Test</h1>
+            
+            <form method="POST", action="{{url_for('predict')}}">
+                Section 1 Total: <input type="number", name="Section-1-Total", placeholder="Between 6 and 18", min="6", max="18", step="1"> <br><br>
+                Section 2 Total: <input type="number", name="Section-2-Total", placeholder="Between 9 and 27", min="9", max="27", step="1"> <br><br>
+                Section 3 Total: <input type="number", name="Section-3-Total", placeholder="Between 10 and 30", min="10", max="30", step="1"> <br><br>
+                <input type="submit", value="predict">
+            </form>
+            
+        </center>
+    </body>
+</html>
